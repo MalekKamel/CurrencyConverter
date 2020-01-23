@@ -10,6 +10,14 @@ Currency Converter represents a real world app example project: it provides a fa
 - [ ] [Plaid](https://github.com/android/plaid)
 - [ ] [Savepopulation's Movies](https://github.com/savepopulation/movies)
 
+
+#API
+The app loads currencies from [Fixer.io](https://fixer.io/)
+
+#Build Project
+to build the project, you have to add a class with the fully qualified name **currencyconverter.common.data.network.api.FixerAccessKey**
+and add string with name  `KEY` which holds the access key string.
+
  ### License
 ```
 Licensed under the Apache License, Version 2.0 (the "License");
