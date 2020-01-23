@@ -3,16 +3,15 @@ package currencyconverter.common.presentation.ui.vm
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.sha.rxrequester.Presentable
-import com.sha.rxrequester.RxRequester
-import io.reactivex.disposables.CompositeDisposable
-import currencyconverter.common.presentation.R
-import currencyconverter.common.presentation.rx.*
 import currencyconverter.common.data.DataManager
+import currencyconverter.common.presentation.requester.AppRequester
+import io.reactivex.disposables.CompositeDisposable
+
 
 open class BaseViewModel(val dm: DataManager) : ViewModel() {
 
     val disposables: CompositeDisposable = CompositeDisposable()
-    var requester: RxRequester
+    var requester: AppRequester
 
     val toggleLoading = MutableLiveData<Boolean>()
     val showError = MutableLiveData<String>()
@@ -20,22 +19,17 @@ open class BaseViewModel(val dm: DataManager) : ViewModel() {
 
     init { requester = setupRequester() }
 
-    private fun setupRequester(): RxRequester {
+    private fun setupRequester(): AppRequester {
         val presentable = object: Presentable {
             override fun showError(error: String) { showError.value = error }
             override fun showError(error: Int) { showErrorRes.value = error }
             override fun showLoading() { toggleLoading.value = true }
             override fun hideLoading() { toggleLoading.value = false }
             override fun onHandleErrorFailed(throwable: Throwable) {
-                showErrorRes.value = R.string.oops_something_went_wrong
+                showError.value = throwable.message
             }
         }
-
-        return RxRequester.create(presentable) {
-            httpHandlers = listOf(ServerErrorHandler())
-            throwableHandlers = listOf(IoExceptionHandler(), NoSuchElementHandler(), OutOfMemoryErrorHandler())
-            serverErrorContract = ErrorContract::class.java
-        }
+        return AppRequester(presentable)
     }
 
     override fun onCleared() {
