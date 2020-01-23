@@ -1,4 +1,4 @@
-# Restaurants
+# Currency Converter
 
 <img src="https://github.com/ShabanKamell/CurrencyConverter/blob/master/blob/raw/home3.png" height="500"> <img src="https://github.com/ShabanKamell/CurrencyConverter/blob/master/blob/raw/calc.png" height="500">
 
