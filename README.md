@@ -1,4 +1,5 @@
-# Currency Converter
+Currency Converter
+==================
 
 <img src="https://github.com/ShabanKamell/CurrencyConverter/blob/master/blob/raw/home3.png" height="500"> <img src="https://github.com/ShabanKamell/CurrencyConverter/blob/master/blob/raw/calc.png" height="500">
 
@@ -11,10 +12,10 @@ Currency Converter represents a real world app example project: it provides a fa
 - [ ] [Savepopulation's Movies](https://github.com/savepopulation/movies)
 
 
-# API
+### API
 The app loads currencies from [Fixer.io](https://fixer.io/)
 
-# Build The Project
+### Build The Project
 
 to build the project, you have to add a class with the fully qualified name **currencyconverter.common.data.network.api.FixerAccessKey** located in `data` module. And add string with name  `KEY` which holds the access key string.
 
