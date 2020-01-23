@@ -3,7 +3,7 @@
 <img src="https://github.com/ShabanKamell/CurrencyConverter/blob/master/blob/raw/home3.png" height="500"> <img src="https://github.com/ShabanKamell/CurrencyConverter/blob/master/blob/raw/calc.png" height="500">
 
 
-Restaurants represents a real world app example: it provides a fairly complex set of functionalities, it's a suitable showcase for all the advantages that architecture components bring, has all features that would make it a modular, scalable, testable and maintainable app.
+Currency Converter represents a real world app example project: it provides a fairly complex set of functionalities, it's a suitable showcase for all the advantages that architecture components bring, has all features that would make it a modular, scalable, testable and maintainable app.
  
  ### Credit
 - [ ] [Build a Modular Android App Architecture (Google I/O'19)](https://www.youtube.com/watch?v=PZBg5DIzNww)
