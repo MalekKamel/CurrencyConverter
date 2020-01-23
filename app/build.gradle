@@ -1,0 +1,32 @@
+apply plugin: Plugins.androidApplication
+apply from: "$rootDir/${GradleName.common}"
+
+android {
+
+    defaultConfig {
+        applicationId "com.currencyconverter.app"
+    }
+
+    buildTypes {
+
+        release {
+            minifyEnabled false
+            useProguard false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            testCoverageEnabled true
+        }
+
+    }
+}
+
+dependencies {
+    implementation project(Module.home)
+    implementation project(Module.splash)
+    implementation project(Module.rateCalc)
+    implementation project(Module.presentation)
+    implementation project(Module.data)
+}

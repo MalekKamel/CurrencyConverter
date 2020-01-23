@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="currencyconverter.feature.home"
+    xmlns:dist="http://schemas.android.com/apk/distribution">
+
+    <dist:module
+        dist:instant="false"
+        dist:onDemand="false">
+        <dist:fusing dist:include="true" />
+    </dist:module>
+
+</manifest>

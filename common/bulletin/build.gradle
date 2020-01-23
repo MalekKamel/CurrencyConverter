@@ -1,0 +1,9 @@
+apply from: "$rootDir/${GradleName.commonAndroidLib}"
+
+dependencies {
+    api project(Module.data)
+
+    implementation Deps.androidx_appCompat
+    api Deps.androidx_recyclerView
+
+}

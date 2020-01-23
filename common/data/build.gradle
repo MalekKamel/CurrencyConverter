@@ -1,0 +1,30 @@
+apply from: "$rootDir/${GradleName.commonAndroidLib}"
+
+android {
+    buildTypes {
+
+        release {
+            buildConfigField("String", "API_BASE_URL", "\"${Config.baseUrlProd}\"")
+            buildConfigField("String", "FIXER_ACCESS_KEY", "\"${Config.fixerAccessKey}\"")
+        }
+
+        debug {
+            buildConfigField("String", "API_BASE_URL", "\"${Config.baseUrlDev}\"")
+            buildConfigField("String", "FIXER_ACCESS_KEY", "\"${Config.fixerAccessKey}\"")
+        }
+    }
+}
+
+dependencies {
+    api project(Module.core)
+
+    api Deps.retrofit_adapter
+    api Deps.retrofit_converter
+    api Deps.retrofit_runtime
+
+    api Deps.okHttp_runtime
+    api Deps.okHttp_interceptor
+
+    api Deps.sha_modelMapper
+
+}

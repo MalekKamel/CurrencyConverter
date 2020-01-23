@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:fitsSystemWindows="true"
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_cloud"
+            >
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:title=""
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/cloudy">
+
+                <currencyconverter.common.presentation.ui.custom.AppTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="@dimen/_13ssp"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_10sdp"
+                    >
+
+                    <EditText
+                        android:id="@+id/etBaseCurrency"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Space
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/tvBaseCurrency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/_18ssp"
+                    tools:text="EUR"
+                    android:layout_margin="@dimen/_10sdp"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tvToCurrencyValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:text="14.0"
+                    android:textSize="@dimen/_18ssp"
+                    android:layout_margin="@dimen/_10sdp"
+                    />
+
+                <Space
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/tvToCurrencyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/_18ssp"
+                    tools:text="EUR"
+                    android:layout_margin="@dimen/_10sdp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

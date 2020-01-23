@@ -1,0 +1,6 @@
+apply from: "$rootDir/${GradleName.commonAndroidLib}"
+
+dependencies {
+    implementation project(Module.presentation)
+    implementation project(Module.data)
+}

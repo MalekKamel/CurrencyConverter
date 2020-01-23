@@ -1,0 +1,7 @@
+include ':app'
+include ':common:core'
+include ':common:data'
+include ':common:presentation'
+include ':feature:home'
+include ':feature:splash'
+include ':feature:ratecalc'
