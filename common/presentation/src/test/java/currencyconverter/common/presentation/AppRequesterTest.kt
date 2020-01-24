@@ -13,9 +13,9 @@ import org.junit.Test
 
 
 class AppRequesterTest : BaseUnitTest() {
-
     private lateinit var requester: AppRequester
     private lateinit var presentable: FakePresentable
+
     @Before
     fun setup() {
         presentable = FakePresentable()
