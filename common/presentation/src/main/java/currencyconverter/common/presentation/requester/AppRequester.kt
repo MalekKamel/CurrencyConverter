@@ -6,7 +6,6 @@ import io.reactivex.Flowable
 import com.sha.rxrequester.Request
 import com.sha.rxrequester.RequestOptions
 import com.sha.rxrequester.RxRequester
-import currencyconverter.common.presentation.rx.*
 
 class AppRequester(presentable: Presentable) {
     private val requester: RxRequester by lazy {

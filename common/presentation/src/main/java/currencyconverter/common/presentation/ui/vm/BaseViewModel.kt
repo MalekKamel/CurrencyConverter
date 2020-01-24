@@ -9,7 +9,6 @@ import io.reactivex.disposables.CompositeDisposable
 
 
 open class BaseViewModel(val dm: DataManager) : ViewModel() {
-
     val disposables: CompositeDisposable = CompositeDisposable()
     var requester: AppRequester
 

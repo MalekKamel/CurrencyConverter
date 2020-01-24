@@ -1,4 +1,4 @@
-package currencyconverter.common.presentation.rx
+package currencyconverter.common.presentation.requester
 
 import com.sha.rxrequester.Presentable
 import com.sha.rxrequester.exception.handler.http.HttpExceptionHandler
