@@ -11,7 +11,18 @@ Currency Converter represents a real world app example project: it provides a fa
 - [ ] [Plaid](https://github.com/android/plaid)
 - [ ] [Savepopulation's Movies](https://github.com/savepopulation/movies)
 
-
+## Stack
+ - [ ] Kotlin
+ - [ ] MVVM
+ - [ ] Clean Architecture
+ - [ ] Google Architecture Components
+ - [ ] Modular Architecture
+ - [ ] Repostory Pattern
+ - [ ] RxJava
+ - [ ] RxJava Test
+ - [ ] Koin
+ - [ ] JUnit & Mockito
+ 
 ### API
 The app loads currencies from [Fixer.io](https://fixer.io/)
 
