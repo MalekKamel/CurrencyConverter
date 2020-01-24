@@ -36,6 +36,10 @@ android {
         exclude 'META-INF/MANIFEST.MF'
         exclude("META-INF/*.kotlin_module")
     }
+
+    sourceSets {
+        androidTest.java.srcDirs += ["${project(Module.core).projectDir}/src/test/java"]
+    }
 }
 
 dependencies {
@@ -47,9 +51,13 @@ dependencies {
     testImplementation TestDeps.androidx_junit
     testImplementation TestDeps.androidx_espressoCore
     testImplementation TestDeps.koin_test
+    testImplementation TestDeps.koin_ext
     testImplementation TestDeps.jUnitParams
     testImplementation TestDeps.kotlinTestJunit5
     testImplementation TestDeps.kotlinTestExtKoin
+    testImplementation TestDeps.mockito_core
+    testImplementation TestDeps.arch_core_test
+    testImplementation TestDeps.mockito_kotlin
 
     androidTestApi(TestDeps.espressoCore, {
         exclude group: 'com.android.support', module: 'support-annotations'

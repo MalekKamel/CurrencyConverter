@@ -10,8 +10,8 @@ import currencyconverter.feature.ratecalc.di.injectFeature
 import kotlinx.android.synthetic.main.frag_rate_calc.*
 import org.koin.android.viewmodel.ext.android.viewModel
 
-class RateCalculatorFrag : BaseFrag<HomeViewModel>() {
-    override val vm: HomeViewModel by viewModel()
+class RateCalculatorFrag : BaseFrag<RateCalculatorViewModel>() {
+    override val vm: RateCalculatorViewModel by viewModel()
     override var layoutId: Int = R.layout.frag_rate_calc
     private lateinit var currencyRate: CurrencyRate
 

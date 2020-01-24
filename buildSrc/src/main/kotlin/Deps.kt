@@ -122,6 +122,9 @@ object TestVersions {
     const val test_espressoCore = "3.1.0-alpha4"
     const val androidx_junit = "1.1.1"
     const val androidx_espressoCore = "3.2.0"
+    const val mockito_kotlin = "2.2.0"
+    const val mockito_core = "3.0.0"
+    const val arch_core_test = "1.0.0-alpha3"
 }
 
 object TestDeps {
@@ -132,8 +135,16 @@ object TestDeps {
     const val kotlinTestExtKoin = "io.kotlintest:kotlintest-extensions-koin:${TestVersions.test_kotlinTestExtKoin}"
 
     const val espressoCore = "androidx.test.espresso:espresso-core:${TestVersions.test_espressoCore}"
-    const val koin_test = "org.koin:koin-android-ext:${Versions.koin}"
+    const val koin_test = "org.koin:koin-test:${Versions.koin}"
+    const val koin_ext = "org.koin:koin-android-ext:${Versions.koin}"
 
     const val androidx_espressoCore = "androidx.test.espresso:espresso-core:${TestVersions.androidx_espressoCore}"
     const val androidx_junit = "androidx.test.ext:junit:${TestVersions.androidx_junit}"
+
+    // <editor-fold desc="mockito">
+    const val mockito_core = "org.mockito:mockito-core:${TestVersions.mockito_core}"
+    const val mockito_kotlin = "com.nhaarman.mockitokotlin2:mockito-kotlin:${TestVersions.mockito_kotlin}"
+    const val arch_core_test = "android.arch.core:core-testing:${TestVersions.arch_core_test}"
+
+    // </editor-fold>
 }
