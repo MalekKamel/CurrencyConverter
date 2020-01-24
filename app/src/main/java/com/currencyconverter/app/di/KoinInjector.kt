@@ -3,7 +3,7 @@ package com.currencyconverter.app.di
 import android.content.Context
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
-import currencyconverter.common.data.di.injectPresentationModule
+import currencyconverter.common.data.di.injectDataModule
 
 object KoinInjector {
 
@@ -11,7 +11,7 @@ object KoinInjector {
         startKoin {
             androidContext(context)
         }
-        injectPresentationModule()
+        injectDataModule()
     }
 
 }

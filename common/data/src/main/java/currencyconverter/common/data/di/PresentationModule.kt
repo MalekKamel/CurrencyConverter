@@ -20,15 +20,13 @@ import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
-fun injectPresentationModule() = loadFeature
+fun injectDataModule() = loadFeature
 
 private val loadFeature by lazy {
-    loadKoinModules(
-            presentationModule
-    )
+    loadKoinModules(dataModule)
 }
 
-val presentationModule = module {
+val dataModule = module {
     factory { CurrencyRatesRepo(get()) }
     factory { CurrencyRateDataSrc(get()) }
 
