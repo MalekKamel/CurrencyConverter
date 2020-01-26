@@ -26,7 +26,7 @@ Currency Converter represents a real world app example project: it provides a fa
 ### API
 The app loads currencies from [Fixer.io](https://fixer.io/)
 
-## APK
+### APK
 You can download the [APK](https://github.com/ShabanKamell/CurrencyConverter/tree/master/apk) for a quick look at the app.
 
 ### Build The Project
