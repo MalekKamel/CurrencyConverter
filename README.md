@@ -13,6 +13,7 @@ Currency Converter represents a real world app example project: it provides a fa
 
 ## Stack
  - [ ] Kotlin
+ - [ ] Gradke Kotlin DSL
  - [ ] MVVM
  - [ ] Clean Architecture
  - [ ] Google Architecture Components
