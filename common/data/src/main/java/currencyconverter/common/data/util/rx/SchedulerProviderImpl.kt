@@ -1,4 +1,4 @@
-package currencyconverter.common.data.rx
+package currencyconverter.common.data.util.rx
 
 import io.reactivex.Scheduler
 import io.reactivex.android.schedulers.AndroidSchedulers

@@ -7,7 +7,7 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import currencyconverter.common.presentation.RxImmediateSchedulerRule
 import currencyconverter.common.data.di.dataModule
 import currencyconverter.common.data.pref.SharedPref
-import currencyconverter.common.data.currencyrate.CurrencyRatesRepo
+import currencyconverter.common.data.domain.currencyrate.CurrencyRatesRepo
 import io.reactivex.Scheduler
 import io.reactivex.android.plugins.RxAndroidPlugins
 import io.reactivex.disposables.Disposable

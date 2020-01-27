@@ -1,4 +1,4 @@
-package currencyconverter.common.data.network.interceptor
+package currencyconverter.common.data.network
 
 import okhttp3.Interceptor
 import okhttp3.Response

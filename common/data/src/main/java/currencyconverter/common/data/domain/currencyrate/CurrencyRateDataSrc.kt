@@ -1,4 +1,4 @@
-package currencyconverter.common.data.currencyrate
+package currencyconverter.common.data.domain.currencyrate
 
 import currencyconverter.common.data.model.CurrencyRateResponse
 import io.reactivex.Single
