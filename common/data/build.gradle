@@ -5,12 +5,10 @@ android {
 
         release {
             buildConfigField("String", "API_BASE_URL", "\"${Config.baseUrlProd}\"")
-            buildConfigField("String", "FIXER_ACCESS_KEY", "\"${Config.fixerAccessKey}\"")
         }
 
         debug {
             buildConfigField("String", "API_BASE_URL", "\"${Config.baseUrlDev}\"")
-            buildConfigField("String", "FIXER_ACCESS_KEY", "\"${Config.fixerAccessKey}\"")
         }
     }
 }

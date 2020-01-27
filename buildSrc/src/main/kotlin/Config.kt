@@ -9,6 +9,4 @@ object Config {
     const val versionName = "1.0.0"
     const val baseUrlProd = "http://data.fixer.io/api/"
     const val baseUrlDev = "http://data.fixer.io/api/"
-    const val fixerAccessKey = "818db86f8083d887073a235d2c0ed6c0"
-
 }
