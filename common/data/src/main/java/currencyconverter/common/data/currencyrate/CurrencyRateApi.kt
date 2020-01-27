@@ -1,6 +1,7 @@
-package currencyconverter.common.data.network.api
+package currencyconverter.common.data.currencyrate
 
 import currencyconverter.common.data.model.CurrencyRateResponse
+import currencyconverter.common.data.network.api.FixerAccessKey
 import io.reactivex.Single
 import retrofit2.http.GET
 import retrofit2.http.Query

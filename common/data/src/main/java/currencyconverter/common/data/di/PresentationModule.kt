@@ -9,11 +9,11 @@ import org.koin.core.context.loadKoinModules
 import org.koin.dsl.module
 import currencyconverter.common.data.BuildConfig
 import currencyconverter.common.data.DataManager
-import currencyconverter.common.data.network.api.CurrencyRateApi
+import currencyconverter.common.data.currencyrate.CurrencyRateApi
 import currencyconverter.common.data.network.interceptor.TokenInterceptor
 import currencyconverter.common.data.pref.SharedPref
-import currencyconverter.common.data.restaurant.CurrencyRateDataSrc
-import currencyconverter.common.data.restaurant.CurrencyRatesRepo
+import currencyconverter.common.data.currencyrate.CurrencyRateDataSrc
+import currencyconverter.common.data.currencyrate.CurrencyRatesRepo
 import currencyconverter.common.data.rx.SchedulerProvider
 import currencyconverter.common.data.rx.SchedulerProviderImpl
 import retrofit2.Retrofit

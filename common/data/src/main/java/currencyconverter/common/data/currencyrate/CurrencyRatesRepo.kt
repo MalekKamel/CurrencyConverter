@@ -1,4 +1,4 @@
-package currencyconverter.common.data.restaurant
+package currencyconverter.common.data.currencyrate
 
 import currencyconverter.common.data.base.BaseRepo
 import currencyconverter.common.data.model.CurrencyRateResponse
