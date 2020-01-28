@@ -30,10 +30,6 @@ The app retrieves currencies from [Fixer.io](https://fixer.io/)
 ### APK
 You can download the [APK](https://github.com/ShabanKamell/CurrencyConverter/tree/master/apk) for a quick look.
 
-### Build The Project
-
-to build the project, you have to add a class with the fully qualified name **currencyconverter.common.data.network.api.FixerAccessKey** located in `data` module. And add string with name  `KEY` which holds the access key string.
-
 ### 🛡 License
 <details>
     <summary>
