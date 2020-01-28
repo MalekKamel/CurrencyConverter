@@ -12,4 +12,3 @@ build
 *.aab
 app/release
 app/debug
-FixerAccessKey.kt
