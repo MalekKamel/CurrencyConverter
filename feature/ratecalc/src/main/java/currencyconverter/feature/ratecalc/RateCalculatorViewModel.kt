@@ -9,4 +9,7 @@ val rateCalculatorModule = module {
     viewModel { RateCalculatorViewModel(get()) }
 }
 
-class RateCalculatorViewModel(dataManager: DataManager) : BaseViewModel(dataManager)
+class RateCalculatorViewModel(dataManager: DataManager) : BaseViewModel(dataManager) {
+
+    fun calculateRate(amount: Double, base: Double) = amount * base
+}

@@ -1,12 +1,11 @@
 package currencyconverter.feature.home
 
 
-import currencyconverter.common.presentation.BaseUnitTest
 import org.junit.Test
 import org.koin.test.inject
 
 
-class HomeViewModelTest : BaseUnitTest() {
+class HomeViewModelTest: BaseUnitTest() {
 
     private val vm: HomeViewModel by inject()
 
