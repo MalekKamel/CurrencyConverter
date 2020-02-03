@@ -8,7 +8,7 @@ import com.sha.rxrequester.RequestOptions
 import com.sha.rxrequester.RxRequester
 
 class AppRequester(presentable: Presentable) {
-    val requester: RxRequester by lazy {
+    private val requester: RxRequester by lazy {
         RxRequester.create(presentable) {
             httpHandlers = listOf(ServerErrorHandler())
             throwableHandlers = listOf(IoExceptionHandler(), NoSuchElementHandler(), OutOfMemoryErrorHandler())
