@@ -6,6 +6,11 @@ import android.content.SharedPreferences
  * Created by Sha on 4/20/17.
  */
 
+enum class SPKey {
+    TOKEN,
+    REFRESH_TOKEN
+}
+
 class SharedPref(pref: SharedPreferences): AbsSharedPref(pref) {
     var token: String
         get() = getString(SPKey.TOKEN, "")
@@ -19,11 +24,13 @@ class SharedPref(pref: SharedPreferences): AbsSharedPref(pref) {
             putString(value, SPKey.REFRESH_TOKEN)
         }
 
-    fun isLogged(): Boolean = token.isNotEmpty()
+    fun isAuthenticated(): Boolean = token.isNotEmpty()
 }
 
 abstract class AbsSharedPref(private val pref: SharedPreferences) {
-    private var editor: SharedPreferences.Editor = pref.edit()
+    private val editor: SharedPreferences.Editor by lazy {
+        pref.edit()
+    }
 
     fun putString(value: String?, key: SPKey){
         editor.putString(key.name, value)
@@ -74,10 +81,5 @@ abstract class AbsSharedPref(private val pref: SharedPreferences) {
         editor.clear()
         editor.apply()
     }
-}
-
-enum class SPKey {
-    TOKEN,
-    REFRESH_TOKEN
 }
 
